@@ -13,12 +13,14 @@ function getTime() {
   const year = date.getFullYear();
   const mouth = date.getMonth() + 1;
   const day = date.getDate();
-  const hour = date.getHours();
-  const min = date.getMinutes();
+  const hour = date.getHours().toString();
+  const min = date.getMinutes().toString();
   const sec = date.getSeconds().toString();
   const week = weekEmun[date.getDay()];
-  const time = `,${hour}:${min}:${sec.length === 1 ? '0' + sec : sec}`;
-  const dates = `${year}年${mouth}月${day}日${week}${time}`;
+  const time = `,${hour.length === 1 ? '0' + hour : hour}:${
+    min.length === 1 ? '0' + min : min
+  }:${sec.length === 1 ? '0' + sec : sec}`;
+  const dates = `${year}年${mouth}月${day}日${week}  ${time}`;
   return dates;
 }
 
