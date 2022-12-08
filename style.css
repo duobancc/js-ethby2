@@ -1,3 +1,8 @@
-h1, h2 {
-  font-family: Lato;
+.title {
+  font: 32px;
+  background-color: antiquewhite;
+  padding: 12px 6px 8px;
+
+  /* x,y 笛卡尔网格 */
+  box-shadow: 6px 20px;
 }
