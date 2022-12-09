@@ -1,8 +1,40 @@
-.title {
-  font: 32px;
-  background-color: antiquewhite;
-  padding: 12px 6px 8px;
+:root {
+  --main-font-size: calc(0.7em + 1vw);
+}
 
+#app {
+  margin-bottom: 5em;
+}
+
+#deep-css {
+  border: solid 1px black;
+  padding: 16px;
+  margin: 0;
+  height: 200px;
+  font-size: var(--main-font-size);
+}
+
+.title {
+  font-size: 16px;
+  background-color: antiquewhite;
   /* x,y 笛卡尔网格 */
   box-shadow: 6px 20px;
+  border: dashed pink 2px;
+  padding: 1em;
+}
+
+.px-box {
+  display: initial;
+  border: dashed pink 1px;
+  padding: 18px;
+  font-size: 32px;
+  border-radius: 8px;
+}
+
+.em-box {
+  display: initial;
+  border: dashed blue 1px;
+  font-size: 1em;
+  padding: 1em;
+  border-radius: 0.5em;
 }

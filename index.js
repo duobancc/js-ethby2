@@ -8,5 +8,5 @@ function updateTime() {
   const currentTime = getTime();
   appDiv.innerHTML = `<h1 class="title">${currentTime}</h1>`;
 }
-updateTime();
+// updateTime();
 // setInterval(updateTime, 1000);
